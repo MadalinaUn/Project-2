@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <input type="text" placeholder="Enter city name" class="input-box" />
+        <button id="searchBtn"><img src="assets/search.png" /></button>
+      </div>
+
+      <div class="weather-body">
+        <h1 class="city">New York</h1>
+        <img src="assets/rain.png" alt="Weather Image" class="weather-img" />
+        <h2 class="description">Rain</h2>
+        <h1 class="temperature">22°C</h1>
+
+        <div class="weather-details">
+          <div class="humidity">
+            <img src="assets/humidity.png" />
+            <div class="text">
+              <span id="humidity">45%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div class="wind">
+            <img src="assets/wind.png" />
+            <div class="text">
+              <span id="wind-speed">12 km/h</span>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="location-not-found">
+        <h1>Sorry, Location not found!!!</h1>
+        <img src="/assets/404.png" alt="404 Error" />
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
